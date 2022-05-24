@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: #090E21;
+    font-family: Outfit;
+}
+@font-face {
+    font-family: Outfit;
+    font-weight: 100;
+    src: url('/fonts/outfit/Outfit-Thin.ttf')
+}
+@font-face {
+    font-family: Outfit;
+    font-weight: 200;
+    src: url('/fonts/outfit/Outfit-ExtraLight.ttf')
+}
+@font-face {
+    font-family: Outfit;
+    font-weight: 300;
+    src: url('/fonts/outfit/Outfit-Light.ttf')
+}
+@font-face {
+    font-family: Outfit;
+    font-weight: 400;
+    src: url('/fonts/outfit/Outfit-Regular.ttf')
+}
+@font-face {
+    font-family: Outfit;
+    font-weight: 500;
+    src: url('/fonts/outfit/Outfit-Medium.ttf')
+}
+@font-face {
+    font-family: Outfit;
+    font-weight: 600;
+    src: url('/fonts/outfit/Outfit-SemiBold.ttf')
+}
+@font-face {
+    font-family: Outfit;
+    font-weight: 700;
+    src: url('/fonts/outfit/Outfit-Bold.ttf')
+}
+@font-face {
+    font-family: Outfit;
+    font-weight: 800;
+    src: url('/fonts/outfit/Outfit-ExtraBold.ttf')
+}
+@font-face {
+    font-family: Outfit;
+    font-weight: 900;
+    src: url('/fonts/outfit/Outfit-Black.ttf')
+}
+
+.header-text-gradient{
+    background: linear-gradient(90deg, #8F90FE 2.57%, #62FCDD 98.31%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
