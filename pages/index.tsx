@@ -5,6 +5,7 @@ import Services from '../components/Services';
 import Nav from './../components/Nav';
 import FilledButton from './../components/FilledButton';
 import Technologies from './../components/Technologies';
+import Team from './../components/Team';
 
 const Home: NextPage = () => {
   return (
@@ -35,7 +36,8 @@ const Home: NextPage = () => {
       <main>
         <Partners />
         <Services />
-        <Technologies/>
+        <Technologies />
+        <Team />
       </main>
     </div>
   )
