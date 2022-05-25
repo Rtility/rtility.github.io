@@ -1,7 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Partners from '../components/Partners';
+import Services from '../components/Services';
 import Nav from './../components/Nav';
+import FilledButton from './../components/FilledButton';
 
 const Home: NextPage = () => {
   return (
@@ -20,12 +22,18 @@ const Home: NextPage = () => {
               <img src='/images/ArrowRight.svg' alt='Arrow Right' className='w-[4.73px]' />
             </section>
             <p className='text-white text-[57px] font-semibold mt-[1.69rem]'>Wellcome To RTILITY<p className='text-gradient1'>a Bridge To Web3</p></p>
+
+            <section className='mt-[4.56rem]'>
+              <FilledButton text="Contact us" />
+            </section>
+            
           </section>
           <img src='/images/headerImg.svg' alt='header' />
         </div>
       </header>
       <main>
-        <Partners/>
+        <Partners />
+        <Services />
       </main>
     </div>
   )
