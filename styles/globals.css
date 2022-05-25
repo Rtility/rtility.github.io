@@ -52,8 +52,13 @@ body {
     src: url('/fonts/outfit/Outfit-Black.ttf')
 }
 
-.header-text-gradient{
+.text-gradient1{
     background: linear-gradient(90deg, #8F90FE 2.57%, #62FCDD 98.31%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-gradient2{
+    background: linear-gradient(90deg, #9784FE 2.57%, #DE5CDB 98.31%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

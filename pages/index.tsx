@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Partners from '../components/Partners';
 import Nav from './../components/Nav';
 
 const Home: NextPage = () => {
@@ -18,12 +19,14 @@ const Home: NextPage = () => {
               <p className='text-[#00D2EF] pr-[6px]'>See It</p>
               <img src='/images/ArrowRight.svg' alt='Arrow Right' className='w-[4.73px]' />
             </section>
-            <p className='text-white text-[57px] font-semibold mt-[1.69rem]'>Wellcome To RTILITY<p className='header-text-gradient'>a Bridge To Web3</p></p>
+            <p className='text-white text-[57px] font-semibold mt-[1.69rem]'>Wellcome To RTILITY<p className='text-gradient1'>a Bridge To Web3</p></p>
           </section>
           <img src='/images/headerImg.svg' alt='header' />
         </div>
       </header>
-
+      <main>
+        <Partners/>
+      </main>
     </div>
   )
 }
