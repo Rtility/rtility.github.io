@@ -4,7 +4,7 @@ import OutlineButton from './OutlineButton';
 const Nav: FC = () => {
     return (
         <nav className='text-[#7981A3] flex justify-around items-center mt-16'>
-            <img src='/images/logo.svg' alt='Rtility' />
+            <img src='/images/logo.svg' alt='Rtility' loading='lazy'/>
             <ul className='text-[22px] space-x-10 font-normal'>
                 <a href='#'>Home</a>
                 <a href='#'>Partners</a>

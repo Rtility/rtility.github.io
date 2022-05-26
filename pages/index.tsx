@@ -21,7 +21,7 @@ const Home: NextPage = () => {
             <section className='flex items-center justify-center w-[15.5rem] h-[2.5rem] bg-[#131938] rounded-[5px] text-sm'>
               <p className='text-[#565F8F] pr-[10px]'>Maybe Some News Here!</p>
               <p className='text-[#00D2EF] pr-[6px]'>See It</p>
-              <img src='/images/ArrowRight.svg' alt='Arrow Right' className='w-[4.73px]' />
+              <img src='/images/ArrowRight.svg' alt='Arrow Right' className='w-[4.73px]' loading='lazy'/>
             </section>
             <p className='text-white text-[57px] font-semibold mt-[1.69rem]'>Wellcome To RTILITY<p className='text-gradient1'>a Bridge To Web3</p></p>
 
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
             </section>
 
           </section>
-          <img src='/images/headerImg.svg' alt='header' />
+          <img src='/images/headerImg.svg' alt='header' loading='lazy'/>
         </div>
       </header>
       <main>

@@ -35,14 +35,14 @@ const Team: FC = () => {
                           ? "object-cover w-[46.5rem] h-[18.1875rem] bg-[#121424] rounded-[10px] flex items-center"
                           : "hidden"
                       }>
-                        <img src={item.image} alt={item.name} className='w-[18.625rem] h-[15rem] ml-[1.56rem] object-cover rounded-[5px]' />
+                        <img src={item.image} alt={item.name} loading='lazy' className='w-[18.625rem] h-[15rem] ml-[1.56rem] object-cover rounded-[5px]' />
                         <section className='ml-12'>
                             <p className='text-white text-4xl'>{item.name}</p>
                             <p className='text-[#7981A3] text-[22px]'>{item.role}</p>
                             <div className='flex mt-8 justify-between'>
-                                <img src='/images/facebook.svg' alt='facebook' />
-                                <img src='/images/facebook.svg' alt='facebook' />
-                                <img src='/images/facebook.svg' alt='facebook' />
+                                <img src='/images/facebook.svg' alt='facebook' loading='lazy'/>
+                                <img src='/images/facebook.svg' alt='facebook' loading='lazy'/>
+                                <img src='/images/facebook.svg' alt='facebook' loading='lazy'/>
                             </div>
                         </section>
                     </section>)}

@@ -37,7 +37,7 @@ const Services: FC = () => {
                         </section>)}
                 </div>
                 <section className='w-[34.375rem]'>
-                    <img className='transition-all duration-300' src={clickedServiceImage} alt='service' />
+                    <img className='transition-all duration-300' src={clickedServiceImage} alt='service' loading='lazy' />
                 </section>
             </section>
             <section className='bg-[#8F90FE] w-[460px] h-[460px] rounded-full opacity-20 blur-[150px] absolute left-[3.5rem] mt-60' />
