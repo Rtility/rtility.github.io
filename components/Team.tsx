@@ -27,9 +27,11 @@ const Team: FC = () => {
             <div className='bg-[#131938] w-[7.625rem] h-[2.25rem] rounded-[5px] text-xs font-normal flex items-center justify-center'>
                 <p className='text-gradient1'>Our Professionals</p>
             </div>
+            <section className='bg-[#8F90FE] w-[460px] h-[460px] rounded-full opacity-20 blur-[150px] absolute right-[3.5rem] -mt-16' />
+
             <p className='text-[45px] font-medium text-white mt-[10px]'>Our Team</p>
             <div className='mt-16 flex items-center'>
-                <section className='bg-[#2b2b42] flex items-center justify-center rounded-full h-[56px] w-[56px] mr-[40px] hover:cursor-pointer'>
+                <section className='bg-[#2b2b42] flex items-center justify-center rounded-full h-[56px] w-[56px] mr-[40px] hover:cursor-pointer z-10'>
                     <img src='/images/leftArrowWhite.svg' onClick={nextSlide} alt='arrow' />
                 </section>
 
@@ -52,11 +54,12 @@ const Team: FC = () => {
                         </section>
                     </section>)}
 
-                <section className='bg-[#2b2b42] flex items-center justify-center rounded-full h-[56px] w-[56px] ml-[40px] hover:cursor-pointer'>
+                <section className='bg-[#2b2b42] flex items-center justify-center rounded-full h-[56px] w-[56px] ml-[40px] hover:cursor-pointer z-10'>
                     <img src='/images/rightArrowWhite.svg' onClick={prevSlide} alt='arrow'/>
                 </section>
-            </div>
+                <section className='bg-[#00D2EF] w-[460px] h-[460px] rounded-full opacity-20 blur-[150px] absolute left-[3.5rem] mt-72' />
 
+            </div>
         </div>
     )
 }
