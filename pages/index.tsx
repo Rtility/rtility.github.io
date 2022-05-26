@@ -6,22 +6,23 @@ import Nav from './../components/Nav';
 import FilledButton from './../components/FilledButton';
 import Technologies from './../components/Technologies';
 import Team from './../components/Team';
+import Footer from '../components/Footer';
 
 const Home: NextPage = () => {
   return (
-    <div className="container mx-auto">
+    <div>
       <Head>
         <title>Rtility</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
+      <header className='container mx-auto'>
         <Nav />
         <div className='flex justify-around items-center mt-[7.31rem]'>
           <section>
             <section className='flex items-center justify-center w-[15.5rem] h-[2.5rem] bg-[#131938] rounded-[5px] text-sm'>
               <p className='text-[#565F8F] pr-[10px]'>Maybe Some News Here!</p>
               <p className='text-[#00D2EF] pr-[6px]'>See It</p>
-              <img src='/images/ArrowRight.svg' alt='Arrow Right' className='w-[4.73px]' loading='lazy'/>
+              <img src='/images/ArrowRight.svg' alt='Arrow Right' className='w-[4.73px]' loading='lazy' />
             </section>
             <p className='text-white text-[57px] font-semibold mt-[1.69rem]'>Wellcome To RTILITY<p className='text-gradient1'>a Bridge To Web3</p></p>
 
@@ -30,15 +31,18 @@ const Home: NextPage = () => {
             </section>
 
           </section>
-          <img src='/images/headerImg.svg' alt='header' loading='lazy'/>
+          <img src='/images/headerImg.svg' alt='header' loading='lazy' />
         </div>
       </header>
-      <main>
+      <main className='container mx-auto'>
         <Partners />
         <Services />
         <Technologies />
         <Team />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   )
 }

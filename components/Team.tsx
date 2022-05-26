@@ -58,7 +58,6 @@ const Team: FC = () => {
                     <img src='/images/rightArrowWhite.svg' onClick={prevSlide} alt='arrow'/>
                 </section>
                 <section className='bg-[#00D2EF] w-[460px] h-[460px] rounded-full opacity-20 blur-[150px] absolute left-[3.5rem] mt-72' />
-
             </div>
         </div>
     )
