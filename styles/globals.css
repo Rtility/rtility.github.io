@@ -62,3 +62,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+@media (max-width: 650px) {
+    .header-image{
+        width: 90%;
+    }
+}

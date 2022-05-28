@@ -17,7 +17,7 @@ const Technologies = () => {
     <div className='mt-[11.875rem]'>
       <p className='text-[2.8125rem] text-white font-medium text-center'>Our Technologies</p>
       <div ref={ref}>
-        {inView && <Lottie options={defaultOptions} height={550} width={1200} style={{cursor:'default'}}/>}
+        {inView && <Lottie options={defaultOptions} style={{cursor:'default'}}/>}
       </div>
       <section className='text-[#7981A3] font-normal text-[28px] flex justify-around'>
         <p>Design</p>
