@@ -20,7 +20,7 @@ const Partners: FC = () => {
     };
     return (
         <div className='text-white mt-[9.375rem] md:mt-[7.25rem] flex flex-col items-center'>
-            <section className='block lg:hidden bg-[#00D2EF] w-[400px] h-[400px] rounded-full opacity-20 blur-[150px] absolute right-0 -mt-18 -z-10' />
+            <section className='block lg:hidden bg-[#00D2EF] w-[300px] h-[300px] rounded-full opacity-20 blur-[150px] absolute right-0 -mt-18 -z-10' />
             <div className='bg-[#131938] w-[4.25rem] h-[2.25rem] rounded-[5px] text-xs font-normal flex items-center justify-center'>
                 <p className='text-gradient1'>We Love</p>
             </div>

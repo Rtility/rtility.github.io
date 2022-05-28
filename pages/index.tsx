@@ -36,8 +36,8 @@ const Home: NextPage = () => {
       </header>
       <main className='container mx-auto'>
         <Partners />
-        {/*<Services />
-        <Technologies /> */}
+        <Services />
+       {/* <Technologies /> */}
        {/*  <Team /> */}
       </main>
       <footer>
