@@ -41,7 +41,7 @@ const Home: NextPage = () => {
         <Team />
       </main>
       <footer>
-        {/* <Footer /> */}
+        <Footer />
       </footer>
     </div>
   )

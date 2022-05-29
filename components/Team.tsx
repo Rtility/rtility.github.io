@@ -31,7 +31,7 @@ const Team: FC = () => {
             <section className='hidden lg:block bg-[#8F90FE] w-[460px] h-[460px] rounded-full opacity-20 blur-[150px] absolute right-[3.5rem] -mt-16 -z-10' />
 
             <p className='text-[45px] font-medium text-white mt-[10px]'>Our Team</p>
-            <div className='hidden mt-16 md:flex items-center'>
+            <div className='hidden mt-16 lg:flex items-center'>
                 <section className='bg-[#2b2b42] flex items-center justify-center rounded-full h-[56px] w-[56px] mr-[40px] hover:cursor-pointer z-10'>
                     <img src='/images/leftArrowWhite.svg' onClick={nextSlide} alt='arrow' />
                 </section>
