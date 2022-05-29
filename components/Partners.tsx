@@ -28,7 +28,7 @@ const Partners: FC = () => {
             {/* partners for tablet and pc size */}
             <div className='hidden md:flex justify-around w-full mt-[3.75rem]'>
                 {partners.map((partner) =>
-                    <section key={partner.id} className={`${partner.id === 1 ? 'h-[10.5rem] w-[10.5rem] top-0' : 'h-[9.18rem] w-[9.18rem]'} bg-[#131938] rounded-full flex items-center justify-center relative top-[5.25rem]`}>
+                    <section key={partner.id} className={`${partner.id === 1 ? 'h-[10.5rem] w-[10.5rem]' : 'h-[9.18rem] w-[9.18rem] top-[5.25rem]'} bg-[#131938] rounded-full flex items-center justify-center relative`}>
                         <img src={partner.image} alt={partner.name} loading='lazy' />
                     </section>
                 )}

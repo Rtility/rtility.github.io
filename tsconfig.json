@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Technologies.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Technologies.tsx", "components/TouchSlider.js"],
   "exclude": ["node_modules"]
 }

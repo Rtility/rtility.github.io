@@ -105,19 +105,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*":
+"@types/react@*", "@types/react@18":
   version "18.0.9"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.9.tgz#d6712a38bd6cd83469603e7359511126f122e878"
   integrity sha512-9bjbg1hJHUm4De19L1cHiW0Jvx3geel6Qczhjd0qY5VKVE2X5+x77YxAepuCwVh4vrgZJdgEJw48zrhRIeF4Nw==
-  dependencies:
-    "@types/prop-types" "*"
-    "@types/scheduler" "*"
-    csstype "^3.0.2"
-
-"@types/react@17.0.38":
-  version "17.0.38"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.38.tgz#f24249fefd89357d5fa71f739a686b8d7c7202bd"
-  integrity sha512-SI92X1IA+FMnP3qM5m4QReluXzhcmovhZnLNm3pyeQlooi02qI7sLiepEYqT678uNiyc25XfCqxREFpy3W7YhQ==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -253,6 +244,11 @@ defined@^1.0.0:
   resolved "https://registry.yarnpkg.com/defined/-/defined-1.0.0.tgz#c98d9bcef75674188e110969151199e39b1fa693"
   integrity sha1-yY2bzvdWdBiOEQlpFRGZ45sfppM=
 
+desandro-matches-selector@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/desandro-matches-selector/-/desandro-matches-selector-2.0.2.tgz#717beed4dc13e7d8f3762f707a6d58a6774218e1"
+  integrity sha512-+1q0nXhdzg1IpIJdMKalUwvvskeKnYyEe3shPRwedNcWtnhEKT3ZxvFjzywHDeGcKViIxTCAoOYQWP1qD7VNyg==
+
 detective@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/detective/-/detective-5.2.0.tgz#feb2a77e85b904ecdea459ad897cc90a99bd2a7b"
@@ -282,6 +278,11 @@ escalade@^3.1.1:
   resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.1.1.tgz#d8cfdc7000965c5a0174b4a82eaa5c0552742e40"
   integrity sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==
 
+ev-emitter@^1.0.0, ev-emitter@^1.0.1, ev-emitter@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/ev-emitter/-/ev-emitter-1.1.1.tgz#8f18b0ce5c76a5d18017f71c0a795c65b9138f2a"
+  integrity sha512-ipiDYhdQSCZ4hSbX4rMW+XzNKMD1prg/sTvoVmSLkuQ1MVlwjJQQA+sW8tMYR3BLUr9KjodFV4pvzunvRhd33Q==
+
 fast-glob@^3.2.11:
   version "3.2.11"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.11.tgz#a1172ad95ceb8a16e20caa5c5e56480e5129c1d9"
@@ -307,6 +308,25 @@ fill-range@^7.0.1:
   dependencies:
     to-regex-range "^5.0.1"
 
+fizzy-ui-utils@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/fizzy-ui-utils/-/fizzy-ui-utils-2.0.7.tgz#7df45dcc4eb374a08b65d39bb9a4beedf7330505"
+  integrity sha512-CZXDVXQ1If3/r8s0T+v+qVeMshhfcuq0rqIFgJnrtd+Bu8GmDmqMjntjUePypVtjHXKJ6V4sw9zeyox34n9aCg==
+  dependencies:
+    desandro-matches-selector "^2.0.0"
+
+flickity@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/flickity/-/flickity-2.2.1.tgz#81126e3d656cb54577358a5f959ffdbda088e670"
+  integrity sha512-fCZJGNqabgDrIhaUBqt2ydE8c5V6iiB3KQAf6dH3Z45MoDUm7g6+uZmteN0aLV9pzVItNqCbfOJQjsJM/rHuSA==
+  dependencies:
+    desandro-matches-selector "^2.0.0"
+    ev-emitter "^1.1.1"
+    fizzy-ui-utils "^2.0.7"
+    get-size "^2.0.3"
+    unidragger "^2.3.0"
+    unipointer "^2.3.0"
+
 fraction.js@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.2.0.tgz#448e5109a313a3527f5a3ab2119ec4cf0e0e2950"
@@ -321,6 +341,11 @@ function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
+
+get-size@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/get-size/-/get-size-2.0.3.tgz#54a1d0256b20ea7ac646516756202769941ad2ef"
+  integrity sha512-lXNzT/h/dTjTxRbm9BXb+SGxxzkm97h/PCIKtlN/CBCxxmkkIVV21udumMS93MuVTDX583gqc94v3RjuHmI+2Q==
 
 glob-parent@^5.1.2, glob-parent@~5.1.2:
   version "5.1.2"
@@ -342,6 +367,13 @@ has@^1.0.3:
   integrity sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==
   dependencies:
     function-bind "^1.1.1"
+
+imagesloaded@^4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/imagesloaded/-/imagesloaded-4.1.4.tgz#1376efcd162bb768c34c3727ac89cc04051f3cc7"
+  integrity sha512-ltiBVcYpc/TYTF5nolkMNsnREHW+ICvfQ3Yla2Sgr71YFwQ86bDwV9hgpFhFtrGPuwEx5+LqOHIrdXBdoWwwsA==
+  dependencies:
+    ev-emitter "^1.0.0"
 
 is-binary-path@~2.1.0:
   version "2.1.0"
@@ -545,7 +577,7 @@ prettier@^2.5.1:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.2.tgz#e26d71a18a74c3d0f0597f55f01fb6c06c206032"
   integrity sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==
 
-prop-types@^15.8.1:
+prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -572,6 +604,14 @@ react-dom@^17.0.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     scheduler "^0.20.2"
+
+react-flickity-component@3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/react-flickity-component/-/react-flickity-component-3.6.0.tgz#f916767c8877c47ec01a20ab2dcd2792839d40fa"
+  integrity sha512-DvsxSMhl61uZU1ohPu1l5F9JoybForioI7tSKhnM77BjTngVqE/5TIoWq6StRn0YOhBWn9lhWTdSBZb+HlJhaw==
+  dependencies:
+    imagesloaded "^4.1.4"
+    prop-types "^15.7.2"
 
 react-intersection-observer@^9.1.0:
   version "9.1.0"
@@ -693,6 +733,20 @@ typescript@4.5.4:
   version "4.5.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.4.tgz#a17d3a0263bf5c8723b9c52f43c5084edf13c2e8"
   integrity sha512-VgYs2A2QIRuGphtzFV7aQJduJ2gyfTljngLzjpfW9FoYZF6xuw1W0vW9ghCKLfcWrCFxK81CSGRAvS1pn4fIUg==
+
+unidragger@^2.3.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/unidragger/-/unidragger-2.4.0.tgz#4cd7e564317af0ef42632d5984a82d4ae6314d8d"
+  integrity sha512-MueZK2oXuGE6OAlGKIrSXK2zCq+8yb1QUZgqyTDCSJzvwYL0g2Llrad+TtoQTYxtFnNyxxSw0IMnKNIgEMia1w==
+  dependencies:
+    unipointer "^2.4.0"
+
+unipointer@^2.3.0, unipointer@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/unipointer/-/unipointer-2.4.0.tgz#ac7316aff6170ff87a4b008e55e842fb4bf13181"
+  integrity sha512-VjzDLPjGK7aYpQKH7bnDZS8X4axF5AFU/LQi+NQe1oyEHfaz6lWKhaQ7n4o7vJ1iJ4i2T0quCIfrQM139p05Sw==
+  dependencies:
+    ev-emitter "^1.0.1"
 
 util-deprecate@^1.0.2:
   version "1.0.2"

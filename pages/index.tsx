@@ -31,14 +31,14 @@ const Home: NextPage = () => {
             </section>
 
           </section>
-          <img src='/images/headerImg.svg' alt='header' loading='lazy' className='header-image'/>
+          <img src='/images/headerImg.svg' alt='header' loading='lazy' className='header-image' />
         </div>
       </header>
       <main className='container mx-auto'>
         <Partners />
         <Services />
-       <Technologies />
-       {/*  <Team /> */}
+        <Technologies />
+        <Team />
       </main>
       <footer>
         {/* <Footer /> */}

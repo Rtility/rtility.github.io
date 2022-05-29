@@ -67,3 +67,11 @@ body {
         width: 90%;
     }
 }
+.flickity-page-dots .dot.is-selected{
+    background: #00D2EF !important;
+}
+.flickity-page-dots .dot{
+    width: 8px !important;
+    height: 8px !important;
+    background-color: #7981A3 !important;
+}

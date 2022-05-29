@@ -1,4 +1,5 @@
 import React, { FC, useState } from 'react'
+import TouchSlider from './TouchSlider';
 
 const Team: FC = () => {
     const team = [{ "name": 'Shabi', "role": 'Backend Developer', "image": '/images/sample_team_image.png' },
@@ -21,16 +22,16 @@ const Team: FC = () => {
                 : currentSlide - 1;
         setCurrentSlide(newSlide);
     };
-    return (
 
+    return (
         <div className='mt-[151px] flex flex-col items-center mb-40'>
             <div className='bg-[#131938] w-[7.625rem] h-[2.25rem] rounded-[5px] text-xs font-normal flex items-center justify-center'>
                 <p className='text-gradient1'>Our Professionals</p>
             </div>
-            <section className='bg-[#8F90FE] w-[460px] h-[460px] rounded-full opacity-20 blur-[150px] absolute right-[3.5rem] -mt-16' />
+            <section className='hidden lg:block bg-[#8F90FE] w-[460px] h-[460px] rounded-full opacity-20 blur-[150px] absolute right-[3.5rem] -mt-16 -z-10' />
 
             <p className='text-[45px] font-medium text-white mt-[10px]'>Our Team</p>
-            <div className='mt-16 flex items-center'>
+            <div className='hidden mt-16 md:flex items-center'>
                 <section className='bg-[#2b2b42] flex items-center justify-center rounded-full h-[56px] w-[56px] mr-[40px] hover:cursor-pointer z-10'>
                     <img src='/images/leftArrowWhite.svg' onClick={nextSlide} alt='arrow' />
                 </section>
@@ -55,10 +56,11 @@ const Team: FC = () => {
                     </section>)}
 
                 <section className='bg-[#2b2b42] flex items-center justify-center rounded-full h-[56px] w-[56px] ml-[40px] hover:cursor-pointer z-10'>
-                    <img src='/images/rightArrowWhite.svg' onClick={prevSlide} alt='arrow'/>
+                    <img src='/images/rightArrowWhite.svg' onClick={prevSlide} alt='arrow' />
                 </section>
                 <section className='bg-[#00D2EF] w-[460px] h-[460px] rounded-full opacity-20 blur-[150px] absolute left-[3.5rem] mt-72' />
             </div>
+            <TouchSlider team={team} />
         </div>
     )
 }
