@@ -36,8 +36,8 @@ const Services: FC = () => {
                             >{item.description}</p>
                         </section>)}
                 </div>
-                <section className='xl:w-[34.375rem] mt-6 lg:mt-0 sm:w-full w-[90%]'>
-                    <img className='transition-all duration-300 mx-auto' src={clickedServiceImage} alt='service' loading='lazy' />
+                <section className='xl:w-[34.375rem] xl:h-[500px] mt-6 lg:mt-0 sm:w-full w-[90%]'>
+                    <img className='mx-auto' src={clickedServiceImage} alt='service' loading='lazy' />
                 </section>
             </section>
             <section className='bg-[#8F90FE] w-[300px] h-[300px] sm:w-[460px] sm:h-[460px] rounded-full opacity-20 blur-[150px] absolute md:left-[3.5rem] mt-60 -z-10' />

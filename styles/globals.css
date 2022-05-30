@@ -75,3 +75,17 @@ body {
     height: 8px !important;
     background-color: #7981A3 !important;
 }
+@keyframes pulse2 {
+    0% {
+        opacity: .5;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.animate-pulse2 {
+    animation: pulse2 1s ease-in-out;
+}

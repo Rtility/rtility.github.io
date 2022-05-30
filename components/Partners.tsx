@@ -51,11 +51,11 @@ const Partners: FC = () => {
                 <p className='text-gradient2'>Jane Doe / Arts Dao</p>
             </div>
             <div className="md:hidden flex mt-[58px]">
-                <section className='bg-[#2b2b42] flex items-center justify-center rounded-full h-[56px] w-[56px] hover:cursor-pointer z-10'>
-                    <img src='/images/leftArrowWhite.svg' onClick={nextSlide} alt='arrow' />
+                <section className='bg-[#2b2b42] flex items-center justify-center rounded-full h-[56px] w-[56px] hover:cursor-pointer z-10' onClick={nextSlide}>
+                    <img src='/images/leftArrowWhite.svg' alt='arrow' />
                 </section>
-                <section className='bg-[#2b2b42] flex items-center justify-center rounded-full h-[56px] w-[56px] ml-[40px] hover:cursor-pointer z-10'>
-                    <img src='/images/rightArrowWhite.svg' onClick={prevSlide} alt='arrow' />
+                <section className='bg-[#2b2b42] flex items-center justify-center rounded-full h-[56px] w-[56px] ml-[40px] hover:cursor-pointer z-10' onClick={prevSlide}>
+                    <img src='/images/rightArrowWhite.svg' alt='arrow' />
                 </section>
             </div>
         </div>

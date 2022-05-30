@@ -34,7 +34,8 @@ const Technologies = () => {
     <div className='mt-[11.875rem]'>
       <p className='text-[1.75rem] sm:text-[2.8125rem] text-white font-medium text-center'>Our Technologies</p>
       <div ref={ref} className='mt-8 sm:mt-0'>
-        {inView && clientWidth <= 640 ? <Lottie options={mobileDefaultOptions} style={{ cursor: 'default', width: '95%' }} /> : <Lottie options={defaultOptions} style={{ cursor: 'default', width: '86%' }} />}
+        {inView && clientWidth <= 640 && <Lottie options={mobileDefaultOptions} style={{ cursor: 'default', width: '95%' }} />}
+        {inView && clientWidth > 640 && <Lottie options={defaultOptions} style={{ cursor: 'default', width: '86%' }} />}
       </div>
       <section className='hidden sm:flex text-[#7981A3] font-normal md:text-[20px] lg:text-[28px] justify-around'>
         <p>Design</p>

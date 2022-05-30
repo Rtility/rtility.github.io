@@ -32,8 +32,8 @@ const Team: FC = () => {
 
             <p className='text-[45px] font-medium text-white mt-[10px]'>Our Team</p>
             <div className='hidden mt-16 lg:flex items-center'>
-                <section className='bg-[#2b2b42] flex items-center justify-center rounded-full h-[56px] w-[56px] mr-[40px] hover:cursor-pointer z-10'>
-                    <img src='/images/leftArrowWhite.svg' onClick={nextSlide} alt='arrow' />
+                <section className='bg-[#2b2b42] flex items-center justify-center rounded-full h-[56px] w-[56px] mr-[40px] hover:cursor-pointer z-20' onClick={nextSlide}>
+                    <img src='/images/leftArrowWhite.svg' alt='arrow' />
                 </section>
 
                 {team[currentSlide + 1]?.image && <img src={team[currentSlide + 1]?.image} className="w-[10.5rem] h-[12.125rem] mr-[24px]" />}
@@ -55,8 +55,8 @@ const Team: FC = () => {
                         </section>
                     </section>)}
 
-                <section className='bg-[#2b2b42] flex items-center justify-center rounded-full h-[56px] w-[56px] ml-[40px] hover:cursor-pointer z-10'>
-                    <img src='/images/rightArrowWhite.svg' onClick={prevSlide} alt='arrow' />
+                <section className='bg-[#2b2b42] flex items-center justify-center rounded-full h-[56px] w-[56px] ml-[40px] hover:cursor-pointer z-20' onClick={prevSlide}>
+                    <img src='/images/rightArrowWhite.svg' alt='arrow' />
                 </section>
                 <section className='bg-[#00D2EF] w-[460px] h-[460px] rounded-full opacity-20 blur-[150px] absolute left-[3.5rem] mt-72' />
             </div>

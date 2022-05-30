@@ -24,7 +24,7 @@ const Home: NextPage = () => {
               <p className='text-[#00D2EF] pr-[6px]'>See It</p>
               <img src='/images/ArrowRight.svg' alt='Arrow Right' className='w-[4.73px]' loading='lazy' />
             </section>
-            <p className='text-white text-center text-[36px] lg:text-[57px] font-semibold mt-[1.69rem]'>Wellcome To RTILITY<p className='text-gradient1'>a Bridge To Web3</p></p>
+            <p className='text-white text-center lg:text-left text-[36px] lg:text-[57px] font-semibold mt-[1.69rem]'>Wellcome To RTILITY<p className='text-gradient1'>a Bridge To Web3</p></p>
 
             <section className='mt-[1.68rem] lg:mt-[4.56rem]'>
               <FilledButton text="Contact us" />
