@@ -22,7 +22,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install packages
-        run: npm ci
+        run: rm -rf node_modules && yarn install --frozen-lockfile 
 
       - name: Build & export project
         run: npm run build
