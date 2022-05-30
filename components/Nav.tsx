@@ -4,7 +4,7 @@ import OutlineButton from './OutlineButton';
 const Nav: FC = () => {
     return (
         <nav className='px-8 md:px-0 text-[#7981A3] flex justify-between lg:justify-around items-center mt-10 lg:mt-16'>
-            <img src='/images/logo.svg' alt='Rtility' loading='lazy' className='w-[24px] h-[37px] md:w-[42px] md:h-[64px] -ml-8'/>
+            <img src='/images/logo.svg' alt='Rtility' loading='lazy' className='w-[24px] h-[37px] md:w-[42px] md:h-[64px] lg:-ml-8'/>
             <ul className='hidden lg:block text-[22px] space-x-10 font-normal'>
                 <a href='#'>Home</a>
                 <a href='#'>Partners</a>
