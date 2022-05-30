@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 
 const Footer: FC = () => {
     return (
-        <div className='bg-[#040614] h-full lg:flex items-center justify-around grid lg:grid-cols-3 py-[81px] grid-col-2 justify-items-center'>
+        <div className='bg-[#040614] h-full lg:flex items-center justify-evenly grid lg:grid-cols-3 py-[81px] grid-col-2 justify-items-center'>
             <section className='flex flex-col items-center lg:block'>
                 <img src='/images/logo.svg' alt='Rtility' loading='lazy' className='w-[42px] h-[64px]'/>
                 <p className='text-[#7981A3] text-center lg:text-left font-normal w-[90%] md:w-[360px] mt-8'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>

@@ -36,7 +36,9 @@ const Team: FC = () => {
                     <img src='/images/leftArrowWhite.svg' alt='arrow' />
                 </section>
 
-                {team[currentSlide + 1]?.image && <img src={team[currentSlide + 1]?.image} className="w-[10.5rem] h-[12.125rem] mr-[24px]" />}
+                {team[currentSlide + 1]?.image && <img src={team[currentSlide + 1]?.image} className="w-[10.5rem] h-[12.125rem] mr-[24px] object-cover" />}
+                {team.length-1 === currentSlide && <img src={team[0]?.image} className="w-[10.5rem] h-[12.125rem] mr-[24px] object-cover" />}
+                
                 {team.map((item, index) =>
                     <section key={index} className={
                         index === currentSlide

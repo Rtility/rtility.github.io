@@ -33,7 +33,7 @@ const Technologies = () => {
   return (
     <div className='mt-[11.875rem]'>
       <p className='text-[1.75rem] sm:text-[2.8125rem] text-white font-medium text-center'>Our Technologies</p>
-      <div ref={ref} className='mt-8 sm:mt-0'>
+      <div ref={ref} className='mt-8 sm:mt-0 xl:h-[550px]'>
         {inView && clientWidth <= 640 && <Lottie options={mobileDefaultOptions} style={{ cursor: 'default', width: '95%' }} />}
         {inView && clientWidth > 640 && <Lottie options={defaultOptions} style={{ cursor: 'default', width: '86%' }} />}
       </div>
