@@ -66,6 +66,10 @@ body {
     .header-image{
         width: 90%;
     }
+    .accordion{
+        width: 90% !important;
+        margin: 5px auto !important;
+    }
 }
 .flickity-page-dots .dot.is-selected{
     background: #00D2EF !important;
@@ -75,17 +79,28 @@ body {
     height: 8px !important;
     background-color: #7981A3 !important;
 }
-@keyframes pulse2 {
-    0% {
-        opacity: .5;
-    }
-    50% {
-        opacity: .5;
-    }
-    100% {
-        opacity: 1;
-    }
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
-.animate-pulse2 {
-    animation: pulse2 1s ease-in-out;
+.fade {
+    -webkit-animation: fadein 2s ease-in-out; 
+       -moz-animation: fadein 2s ease-in-out; 
+        -ms-animation: fadein 2s ease-in-out; 
+         -o-animation: fadein 2s ease-in-out;
+            animation: fadein 2s ease-in-out;
+}
+.accordion-summary{
+    background-color: #121424 !important;
+    border-radius:10px !important;
+}
+.accordion-detail{
+    background-color: #121424 !important;
+    border-radius:0 0 10px 10px !important;
+}
+.accordion{
+    width: 34.5rem;
+    border-radius:10px !important;
+    border: 1px solid #262626;
+    background: #121424 !important;
 }
