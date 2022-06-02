@@ -9,15 +9,9 @@ const Services: FC = () => {
   { "title": 'Front-End Development', "description": 'Rtility offers quality web development solutions to help you grow your business with a great impression.', 'image': '/images/frontend.png' },
   { "title": 'Back-End Development', "description": 'Our back-end development engineers deliver performant and secure solutions customized to the needs of each client.', 'image': '/images/backend.png' }];
 
-
-  const [expandAccordion, setExpandAccordion] = useState<number | undefined>(0);
-  const contentSpace = useRef<HTMLParagraphElement>(null);
-  const [AccordionHeight, setAccordionHeight] = useState<string>('0px');
   const [clickedServiceImage, setClickedServiceImage] = useState<string>(services[0]?.image);
   const imageRef = useRef<HTMLImageElement>(null);
-  const toggleAccordion = (index: number) => {
-    setExpandAccordion(index === expandAccordion ? undefined : index);
-  }
+
   const [clickedServiceImageList, setClickedServiceImageList] = useState<string[]>([])
 
   useEffect(() => {
