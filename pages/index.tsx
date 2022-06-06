@@ -13,7 +13,7 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>Rtility</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/logo.svg" />
       </Head>
       <header className='container mx-auto'>
         <Nav />

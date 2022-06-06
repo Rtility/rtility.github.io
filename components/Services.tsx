@@ -40,7 +40,7 @@ const Services: FC = () => {
         {services.map((service, index) =>
           <Accordion expanded={expanded === `panel${index}`} key={index} onClick={() => setClickedServiceImage(service.image)} onChange={handleChange(`panel${index}`)} className='accordion'>
             <AccordionSummary
-              expandIcon={<img src={expanded === `panel${index}` ? '/images/arrowUpBlue.svg' : '/images/arrowDownWhite.svg'} alt='arrow' />}
+              expandIcon={<img src={expanded === `panel${index}` ? '/images/arrow-blue-down.svg' : '/images/arrowDownWhite.svg'} alt='arrow' />}
               className='accordion-summary'
             >
               <p className='text-[14px] sm:text-[22px] font-normal text-white py-1'>{service.title}</p>
