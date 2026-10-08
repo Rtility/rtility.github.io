@@ -1,8 +1,6 @@
 import React, { FC } from 'react'
 import type { Project } from '../data/projects'
 
-const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
-
 // Generated artwork for a project card, drawn per slug in the project's accent colors
 const ProjectArt: FC<{ project: Project; className?: string }> = ({
   project,
@@ -24,20 +22,12 @@ const ProjectArt: FC<{ project: Project; className?: string }> = ({
         style={{ background: to }}
       />
       {project.slug === 'alphabet' ? (
-        <div className="relative grid h-full grid-cols-7 place-content-center gap-x-3 gap-y-1 p-6 text-center font-semibold">
-          {LETTERS.map((letter, index) => (
-            <span
-              key={letter}
-              className={
-                index % 5 === 0
-                  ? 'text-gradient1 text-2xl'
-                  : 'text-2xl text-[#2b2f55]'
-              }
-            >
-              {letter}
-            </span>
-          ))}
-        </div>
+        <img
+          src="/images/alphabet/renegades-banner.jpg"
+          alt="The Renegades: hand-drawn letter characters from the Alphabet collection"
+          loading="lazy"
+          className="relative h-full w-full bg-[#fbe9d8] object-contain"
+        />
       ) : (
         <svg
           viewBox="0 0 320 200"

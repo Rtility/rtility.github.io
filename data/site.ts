@@ -3,7 +3,7 @@ export const site = {
   url: 'https://rtility.com',
   tagline: 'Bringing Art + Utility to the Metaverse and the NFT space',
   description:
-    'Rtility designs, builds and audits smart contracts, NFT collections and the web apps around them.',
+    'Rtility designs, builds and audits smart contracts, NFT collections and web apps for NFT projects, DAOs and Web3 teams, and builds its own NFT project, Alphabet.',
   email: 'info@rtility.com',
   github: 'https://github.com/Rtility',
   twitter: 'https://x.com/Rtility_io',
@@ -14,6 +14,7 @@ export const site = {
 }
 
 export const navLinks = [
+  { label: 'Alphabet', href: '/#alphabet' },
   { label: 'Partners', href: '/#partners' },
   { label: 'Services', href: '/#services' },
   { label: 'Work', href: '/#work' },

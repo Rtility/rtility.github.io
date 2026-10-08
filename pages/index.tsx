@@ -2,6 +2,7 @@ import type { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import Partners from '../components/Partners'
+import Alphabet from '../components/Alphabet'
 import Services from '../components/Services'
 import Nav from '../components/Nav'
 import FilledButton from '../components/FilledButton'
@@ -37,7 +38,7 @@ const Home: NextPage<Props> = ({ stars }) => {
         <Nav />
         <div className="mt-8 flex flex-wrap-reverse items-center justify-around lg:mt-[7.31rem]">
           <section className="mt-[94px] flex flex-col items-center px-6 lg:mt-0 lg:block lg:px-0">
-            <Link href="/projects/alphabet">
+            <Link href="/#alphabet">
               <a className="inline-flex h-[2.5rem] items-center justify-center rounded-[5px] bg-[#131938] px-4 text-sm transition hover:bg-[#1a2150]">
                 <span className="pr-[10px] text-[#565F8F]">
                   Alphabet is coming
@@ -56,7 +57,8 @@ const Home: NextPage<Props> = ({ stars }) => {
             </h1>
             <p className="mt-6 max-w-[30rem] text-center text-lg text-[#7981A3] lg:text-left lg:text-xl">
               Art + Utility. We design, build and audit smart contracts, NFT
-              collections and the web apps around them.
+              collections and web apps for NFT projects, DAOs and Web3 teams,
+              and we build our own, starting with Alphabet.
             </p>
             <section className="mt-[1.68rem] flex flex-wrap justify-center gap-4 lg:mt-[3.5rem] lg:justify-start">
               <FilledButton text="Contact us" href="#contact" />
@@ -78,6 +80,7 @@ const Home: NextPage<Props> = ({ stars }) => {
         </div>
       </header>
       <main className="container mx-auto">
+        <Alphabet />
         <Partners />
         <Services />
         <Work />

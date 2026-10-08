@@ -17,7 +17,7 @@ const Nav: FC = () => {
           />
         </a>
       </Link>
-      <ul className="hidden space-x-10 text-[22px] font-normal lg:flex">
+      <ul className="hidden space-x-6 text-[18px] font-normal lg:flex xl:space-x-10 xl:text-[22px]">
         {navLinks.map((link) => (
           <li key={link.href}>
             <a href={link.href} className="transition hover:text-white">

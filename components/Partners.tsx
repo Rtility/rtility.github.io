@@ -15,14 +15,6 @@ const Partners: FC = () => {
         { label: '@arts_dao', href: 'https://x.com/arts_dao' },
       ],
     },
-    {
-      name: 'Alphabet',
-      glyph: 'A',
-      note: 'We are building Alphabet end to end: the mint contract, the generative art, the lore site and a word game powered by Claude.',
-      tag: 'Alphabet / NFT collection',
-      href: '/projects/alphabet',
-      links: [{ label: '@0xalphabetNFT', href: 'https://x.com/0xalphabetNFT' }],
-    },
   ]
   const partner = partners[currentPartner]
 
@@ -63,18 +55,12 @@ const Partners: FC = () => {
                 : 'h-[6.25rem] w-[6.25rem] opacity-60 hover:opacity-100 md:h-[9.18rem] md:w-[9.18rem]'
             } items-center justify-center rounded-full bg-[#131938] transition-all`}
           >
-            {item.logo ? (
-              <img
-                src={item.logo}
-                alt={item.name}
-                loading="lazy"
-                className="w-[50px] md:w-[85px]"
-              />
-            ) : (
-              <span className="text-gradient1 text-5xl font-semibold md:text-7xl">
-                {item.glyph}
-              </span>
-            )}
+            <img
+              src={item.logo}
+              alt={item.name}
+              loading="lazy"
+              className="w-[50px] md:w-[85px]"
+            />
           </button>
         ))}
       </div>
@@ -99,7 +85,11 @@ const Partners: FC = () => {
           </a>
         ))}
       </div>
-      <div className="mt-[58px] flex md:hidden">
+      <div
+        className={`mt-[58px] md:hidden ${
+          partners.length > 1 ? 'flex' : 'hidden'
+        }`}
+      >
         <button
           type="button"
           aria-label="Previous partner"

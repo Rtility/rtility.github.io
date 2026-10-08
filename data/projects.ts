@@ -94,15 +94,16 @@ export const projects: Project[] = [
   {
     slug: 'alphabet',
     title: 'Alphabet',
-    client: 'Alphabet',
+    client: 'Rtility (in-house)',
     kind: 'NFT Collection',
     year: 'Coming soon',
-    status: 'In development',
+    status: 'Pre-launch',
     summary:
-      'A story-driven generative collection about the 26 tribes of letters, with a word game powered by Claude. We are building the contract, the art pipeline, the game and the site.',
+      'Our own NFT collection about 26 tribes of hand-drawn letters. The mint contract and art pipeline are built; next is a word game where Claude writes every word holders spell into the story.',
     intro: [
       'In Broca’s area, where speech is made, live 26 tribes, one per letter, sacrificed daily to give you words. The Renegades crossed the walls to stop it.',
-      'Alphabet turns that story into a generative NFT collection and a game. Every token is a letter from one of the 26 tribes, and holders play the Renegades: they spell words with the letters they own, and Claude, Anthropic’s AI model, writes each new word into the story. Rtility builds the whole stack, from the mint contract and art generator to the game and the site.',
+      'Alphabet is Rtility’s own project, not client work. It turns that story into a generative NFT collection and a game: every token is a letter from one of the 26 tribes, and holders play the Renegades, spelling words with the letters they own while Claude, Anthropic’s AI model, writes each new word into the story.',
+      'Where it stands today: the mint contract, the generative art pipeline and the whitelist service are built and tested on testnet, and the first lore site exists. The Claude word game is in design and comes next, then the mainnet launch.',
     ],
     story: [
       'Once upon a time, deep in the universe of the human mind, in Broca’s area where speech is made, lay a land of 26 realms called the Alphabet Land. Each realm was home to its own race of letters, from A to Z, and every one of them lived for a single purpose: to help their god, the human, make words.',
@@ -116,7 +117,7 @@ export const projects: Project[] = [
       eyebrow: 'Built with Claude',
       heading: 'The Renegade word game',
       intro:
-        'The story ends with a call to action, and the game answers it. Holders combine the letters they own into words, and every word the community simulates is one the tribes no longer pay for with a sacrifice. Claude turns each of those words into a new chapter of the story.',
+        'The story ends with a call to action, and the game will answer it. Holders will combine the letters they own into words, and every word the community simulates is one the tribes no longer pay for with a sacrifice. Claude turns each of those words into a new chapter of the story. Here is how it is designed to work.',
       steps: [
         {
           title: 'Spell a word',
@@ -135,23 +136,28 @@ export const projects: Project[] = [
           text: 'The chapter joins the public Chronicle on the site, credited to the holder, and the letters used are marked as saved from the sacrifice.',
         },
       ],
-      note: 'The game runs on the Claude API and is in development alongside the collection.',
+      note: 'Status: planned. The game is in design and will run on the Claude API; nothing is live yet.',
     },
     workHeading: 'What we are building',
     work: [
       'ERC721A mint contract with a signature-based presale, a timed public sale, per-wallet and per-transaction limits, and a guard against contract mints.',
       'Off-chain whitelist service that signs each approved wallet, so the allowlist can change without an on-chain transaction.',
       'Generative art pipeline that layers traits by rarity weight, rejects duplicates and writes OpenSea-ready metadata.',
-      'The Renegade word game on the Claude API: on-chain ownership checks, word validation and Claude-written chapters published to the Chronicle.',
-      'Lore-first site with wallet connect, built in Next.js.',
+      'Next: the Renegade word game on the Claude API, with on-chain ownership checks, word validation and Claude-written chapters published to the Chronicle.',
+      'First lore site with wallet connect, built in Next.js.',
       'Hardhat test suite with gas reporting and coverage, run in CI.',
     ],
     facts: [
+      { label: 'Owner', value: 'Rtility (in-house)' },
       { label: 'Type', value: 'Generative NFT collection + word game' },
-      { label: 'Scope', value: 'Contract, art pipeline, game, site' },
-      { label: 'AI', value: 'Claude API' },
+      {
+        label: 'Built',
+        value: 'Mint contract, art pipeline, whitelist service',
+      },
+      { label: 'Next', value: 'Claude word game, mainnet launch' },
+      { label: 'AI', value: 'Claude API (planned)' },
       { label: 'Chain', value: 'Ethereum' },
-      { label: 'Status', value: 'In development' },
+      { label: 'Stage', value: 'Pre-launch' },
     ],
     stack: [
       'Solidity',
