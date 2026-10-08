@@ -18,7 +18,7 @@ const Partners: FC = () => {
     {
       name: 'Alphabet',
       glyph: 'A',
-      note: 'We are building Alphabet end to end: the mint contract, the generative art pipeline, the whitelist service and the lore site.',
+      note: 'We are building Alphabet end to end: the mint contract, the generative art, the lore site and a word game powered by Claude.',
       tag: 'Alphabet / NFT collection',
       href: '/projects/alphabet',
       links: [{ label: '@0xalphabetNFT', href: 'https://x.com/0xalphabetNFT' }],

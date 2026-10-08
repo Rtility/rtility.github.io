@@ -71,9 +71,67 @@ const ProjectPage: NextPage<{ slug: string }> = ({ slug }) => {
             ))}
           </div>
 
+          {project.story && (
+            <section className="mt-16 max-w-3xl">
+              <div className="flex h-[2.25rem] w-fit items-center rounded-[5px] bg-[#131938] px-3 text-xs">
+                <span className="text-gradient1">The Story</span>
+              </div>
+              <div className="mt-6 space-y-5 rounded-[10px] border border-[#262626] bg-[#121424] p-6 text-lg leading-relaxed text-[#7981A3] lg:p-10">
+                {project.story.map((p, i) =>
+                  i === project.story!.length - 1 ? (
+                    <p key={i} className="text-gradient1 font-medium">
+                      {p}
+                    </p>
+                  ) : (
+                    <p key={i}>{p}</p>
+                  )
+                )}
+              </div>
+            </section>
+          )}
+
+          {project.feature && (
+            <section className="mt-16">
+              <div className="flex h-[2.25rem] w-fit items-center rounded-[5px] bg-[#131938] px-3 text-xs">
+                <span className="text-gradient1">
+                  {project.feature.eyebrow}
+                </span>
+              </div>
+              <h2 className="mt-4 text-[28px] font-semibold text-white lg:text-[45px]">
+                {project.feature.heading}
+              </h2>
+              <p className="mt-4 max-w-3xl text-lg text-[#7981A3]">
+                {project.feature.intro}
+              </p>
+              <ol className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                {project.feature.steps.map((step, i) => (
+                  <li
+                    key={step.title}
+                    className="rounded-[10px] border border-[#262626] bg-[#121424] p-6"
+                  >
+                    <span className="text-gradient1 text-2xl font-semibold">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                    <h3 className="mt-3 text-lg font-medium text-white">
+                      {step.title}
+                    </h3>
+                    <p className="mt-2 text-[#7981A3]">{step.text}</p>
+                  </li>
+                ))}
+              </ol>
+              {project.feature.note && (
+                <p className="mt-6 text-sm text-[#565F8F]">
+                  {project.feature.note}
+                </p>
+              )}
+            </section>
+          )}
+
           <div className="mt-14 grid gap-10 lg:grid-cols-[1fr_420px] lg:gap-16">
             <section>
-              <h2 className="text-2xl font-semibold text-white">What we did</h2>
+              <h2 className="text-2xl font-semibold text-white">
+                {project.workHeading ?? 'What we did'}
+              </h2>
               <ul className="mt-6 space-y-4">
                 {project.work.map((item, i) => (
                   <li key={i} className="flex gap-4 text-[#7981A3]">

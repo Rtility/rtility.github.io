@@ -12,6 +12,18 @@ export type Project = {
   intro: string[]
   // What Rtility did, one bullet per point
   work: string[]
+  // Heading for the work list; defaults to "What we did"
+  workHeading?: string
+  // Optional long-form lore, shown as "The Story"
+  story?: string[]
+  // Optional walkthrough of a product feature, shown after the story
+  feature?: {
+    eyebrow: string
+    heading: string
+    intro: string
+    steps: { title: string; text: string }[]
+    note?: string
+  }
   facts: { label: string; value: string }[]
   stack: string[]
   links: ProjectLink[]
@@ -87,21 +99,57 @@ export const projects: Project[] = [
     year: 'Coming soon',
     status: 'In development',
     summary:
-      'A story-driven generative collection about the 26 tribes of letters. We built the contract, the art pipeline, the whitelist service and the site.',
+      'A story-driven generative collection about the 26 tribes of letters, with a word game powered by Claude. We are building the contract, the art pipeline, the game and the site.',
     intro: [
       'In Broca’s area, where speech is made, live 26 tribes, one per letter, sacrificed daily to give you words. The Renegades crossed the walls to stop it.',
-      'Alphabet turns that story into a generative NFT collection. Rtility handles the whole stack: the lore site, the art generator, the mint contract and the off-chain service that signs whitelist mints.',
+      'Alphabet turns that story into a generative NFT collection and a game. Every token is a letter from one of the 26 tribes, and holders play the Renegades: they spell words with the letters they own, and Claude, Anthropic’s AI model, writes each new word into the story. Rtility builds the whole stack, from the mint contract and art generator to the game and the site.',
     ],
+    story: [
+      'Once upon a time, deep in the universe of the human mind, in Broca’s area where speech is made, lay a land of 26 realms called the Alphabet Land. Each realm was home to its own race of letters, from A to Z, and every one of them lived for a single purpose: to help their god, the human, make words.',
+      'The price was steep. Every realm had to sacrifice at least one of its own each day to feed the making of words. A day in the Alphabet Land lasts a single second in the human world, so the letters watched friends and family vanish every second. And the races were forbidden to speak to one another; only those being sacrificed ever met, in their final moments.',
+      'Years passed. Most letters grew used to the ritual and held on to their ancestors’ belief that there was no way out of the pain.',
+      'But some could not bear it any longer. Tired of losing one of their own every day, they broke with the old beliefs and formed a group called The Renegades.',
+      'The Renegades set themselves two goals. First, to connect all 26 races into one community and end the old divisions between them. Second, to simulate every letter, so their god could still have words without a single sacrifice. They reached out to each race in secret with one message: “It doesn’t matter what race you are, you are welcome to join The Renegades.”',
+      'Help the Renegades expand their vocabulary until they can simulate every word.',
+    ],
+    feature: {
+      eyebrow: 'Built with Claude',
+      heading: 'The Renegade word game',
+      intro:
+        'The story ends with a call to action, and the game answers it. Holders combine the letters they own into words, and every word the community simulates is one the tribes no longer pay for with a sacrifice. Claude turns each of those words into a new chapter of the story.',
+      steps: [
+        {
+          title: 'Spell a word',
+          text: 'Connect your wallet and combine letters you hold into a word. The game checks on-chain that you own every letter you use.',
+        },
+        {
+          title: 'Claude checks it',
+          text: 'Claude confirms the word is real and judges how hard it was to simulate. The backend rejects repeats, so each word can only be saved once.',
+        },
+        {
+          title: 'Claude writes the chapter',
+          text: 'Claude writes a short chapter about the word in the voice of the tribes that spelled it, with the canon and a style guide in its prompt so every chapter fits the story.',
+        },
+        {
+          title: 'The Chronicle grows',
+          text: 'The chapter joins the public Chronicle on the site, credited to the holder, and the letters used are marked as saved from the sacrifice.',
+        },
+      ],
+      note: 'The game runs on the Claude API and is in development alongside the collection.',
+    },
+    workHeading: 'What we are building',
     work: [
       'ERC721A mint contract with a signature-based presale, a timed public sale, per-wallet and per-transaction limits, and a guard against contract mints.',
       'Off-chain whitelist service that signs each approved wallet, so the allowlist can change without an on-chain transaction.',
       'Generative art pipeline that layers traits by rarity weight, rejects duplicates and writes OpenSea-ready metadata.',
-      'Lore-first landing page with wallet connect, built in Next.js.',
+      'The Renegade word game on the Claude API: on-chain ownership checks, word validation and Claude-written chapters published to the Chronicle.',
+      'Lore-first site with wallet connect, built in Next.js.',
       'Hardhat test suite with gas reporting and coverage, run in CI.',
     ],
     facts: [
-      { label: 'Type', value: 'Generative NFT collection' },
-      { label: 'Scope', value: 'Contract, art pipeline, backend, site' },
+      { label: 'Type', value: 'Generative NFT collection + word game' },
+      { label: 'Scope', value: 'Contract, art pipeline, game, site' },
+      { label: 'AI', value: 'Claude API' },
       { label: 'Chain', value: 'Ethereum' },
       { label: 'Status', value: 'In development' },
     ],
@@ -109,6 +157,7 @@ export const projects: Project[] = [
       'Solidity',
       'ERC721A',
       'Hardhat',
+      'Claude API',
       'TypeScript',
       'Python',
       'Next.js',
