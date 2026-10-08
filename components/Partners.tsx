@@ -10,6 +10,10 @@ const Partners: FC = () => {
       note: 'We audited the mint contract behind Ethernal Gates, the membership-pass collection Arts DAO launched on Ethereum in June 2022.',
       tag: 'Arts DAO / Ethernal Gates',
       href: '/projects/ethernal-gates',
+      links: [
+        { label: 'artsdao.io', href: 'https://www.artsdao.io/' },
+        { label: '@arts_dao', href: 'https://x.com/arts_dao' },
+      ],
     },
     {
       name: 'Alphabet',
@@ -17,6 +21,7 @@ const Partners: FC = () => {
       note: 'We are building Alphabet end to end: the mint contract, the generative art pipeline, the whitelist service and the lore site.',
       tag: 'Alphabet / NFT collection',
       href: '/projects/alphabet',
+      links: [{ label: '@0xalphabetNFT', href: 'https://x.com/0xalphabetNFT' }],
     },
   ]
   const partner = partners[currentPartner]
@@ -81,6 +86,19 @@ const Partners: FC = () => {
           <span className="text-gradient2">{partner.tag} →</span>
         </a>
       </Link>
+      <div className="mt-5 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+        {partner.links.map((link) => (
+          <a
+            key={link.href}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#7981A3] transition hover:text-[#00D2EF]"
+          >
+            {link.label} ↗
+          </a>
+        ))}
+      </div>
       <div className="mt-[58px] flex md:hidden">
         <button
           type="button"

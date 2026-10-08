@@ -32,6 +32,7 @@ export const projects: Project[] = [
     intro: [
       'Arts DAO is a Dubai-based DAO whose members co-own blue-chip NFTs through a shared treasury. Ethernal Gates, its debut collection made with artist Kristel Bechara, is the membership pass: holding one gives token-gated access and a vote on the treasury.',
       'Before the June 2022 launch on Ethereum, Arts DAO asked us to audit the mint contract. We reviewed it line by line, ran it through static analysis, and delivered a written report with a fix for every finding.',
+      'The mint went live on June 6, 2022 and ran smoothly. Thanks to ERC721A, minting 40 tokens in one presale transaction used about 188k gas, only 2.3 times the 81k of a single-token mint, and a public-sale mint used about 65k. Deploying the contract cost 0.079 ETH.',
     ],
     work: [
       'Line-by-line manual review of the ERC721A mint contract, plus automated analysis with Slither.',
@@ -45,6 +46,8 @@ export const projects: Project[] = [
       { label: 'Service', value: 'Smart contract audit' },
       { label: 'Chain', value: 'Ethereum' },
       { label: 'Findings', value: '0 critical · 1 high · 4 medium · 20 info' },
+      { label: 'Mint day', value: 'June 6, 2022' },
+      { label: '40-token mint', value: '≈188k gas in one transaction' },
     ],
     stack: [
       'Solidity 0.8',
@@ -60,6 +63,10 @@ export const projects: Project[] = [
         href: 'https://github.com/Rtility/artsdao_ethernalgates/blob/main/audit/Ethernal_Gates_Audit_Report_V1.0.pdf',
       },
       {
+        label: 'Mint-day recap on X',
+        href: 'https://x.com/Rtility_io/status/1533881615214075907',
+      },
+      {
         label: 'Audited source',
         href: 'https://github.com/Rtility/artsdao_ethernalgates',
       },
@@ -67,6 +74,7 @@ export const projects: Project[] = [
         label: 'Collection on OpenSea',
         href: 'https://opensea.io/collection/ethernal-gates',
       },
+      { label: 'Arts DAO website', href: 'https://www.artsdao.io/' },
       { label: 'Arts DAO on X', href: 'https://x.com/arts_dao' },
     ],
     accent: ['#9784FE', '#DE5CDB'],
