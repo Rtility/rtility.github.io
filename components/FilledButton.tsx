@@ -1,9 +1,13 @@
 import React, { FC } from 'react'
 
-const FilledButton:FC<{text:string}> = ({text})=> {
+const FilledButton: FC<{ text: string; href: string }> = ({ text, href }) => {
   return (
-    <button type="button" className="inline-block font-medium w-[204px] h-[56px] border
-    border-[#00D2EF] bg-[#00D2EF] text-white text-sm rounded-[5px]">{text}</button>
+    <a
+      href={href}
+      className="inline-flex h-[56px] w-[204px] items-center justify-center rounded-[5px] border border-[#00D2EF] bg-[#00D2EF] text-sm font-medium text-white transition hover:bg-[#00b8d1]"
+    >
+      {text}
+    </a>
   )
 }
-export default FilledButton;
+export default FilledButton

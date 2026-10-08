@@ -1,36 +1,84 @@
 import React, { FC } from 'react'
+import { navLinks, site } from '../data/site'
 
 const Footer: FC = () => {
-    return (
-        <div className='bg-[#040614] h-full lg:flex items-center justify-evenly grid lg:grid-cols-3 py-[81px] grid-col-2 justify-items-center'>
-            <section className='flex flex-col items-center lg:block'>
-                <img src='/images/logo.svg' alt='Rtility' loading='lazy' className='w-[42px] h-[64px]'/>
-                <p className='text-[#7981A3] text-center lg:text-left font-normal w-[90%] md:w-[360px] mt-8'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </section>
-            <div className='mt-[115px] lg:mt-0'>
-                <p className='text-[28px] font-normal text-white'>main</p>
-                <section className='text-[#7981A3] space-y-6 mt-[2.8rem]'>
-                    <p>Partners</p>
-                    <p>Services</p>
-                    <p>Our Team</p>
-                    <p>About Us</p>
-                </section>
-            </div>
-            <div className='w-[17.25rem] mt-[115px] lg:mt-0'>
-                <p className='text-[28px] font-normal text-white text-center lg:text-left'>Contact Us</p>
-                <section className='flex mt-[2.8rem] justify-between'>
-                    <img src='/images/github.svg' alt='Github' loading='lazy' />
-                    <img src='/images/whatsapp.svg' alt='whatsapp' loading='lazy' />
-                    <img src='/images/telegram.svg' alt='telegram' loading='lazy' />
-                    <img src='/images/twitter.svg' alt='twitter' loading='lazy' />
-                </section>
-                <section className='flex mt-[3.25rem] justify-center lg:justify-start'>
-                    <img src='/images/email.svg' alt='email' loading='lazy' />
-                    <p className='text-[#7981A3] ml-4'>info@Rtility.com</p>
-                </section>
-            </div>
+  return (
+    <div className="bg-[#040614] py-[81px]">
+      <div className="container mx-auto grid justify-items-center gap-y-[72px] px-6 lg:flex lg:items-start lg:justify-evenly">
+        <section className="flex flex-col items-center lg:block">
+          <img
+            src="/images/logo.svg"
+            alt="Rtility"
+            loading="lazy"
+            className="h-[64px] w-[42px]"
+          />
+          <p className="mt-8 w-full max-w-[360px] text-center font-normal text-[#7981A3] lg:text-left">
+            Rtility is a Web3 studio. We design, build and audit smart
+            contracts, NFT collections and the apps around them. Art + Utility,
+            since {site.activeSince}.
+          </p>
+        </section>
+        <div className="text-center lg:text-left">
+          <p className="text-[28px] font-normal text-white">Explore</p>
+          <ul className="mt-8 space-y-5 text-[#7981A3]">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a href={link.href} className="transition hover:text-white">
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
-    )
+        <div className="w-[17.25rem]">
+          <p className="text-center text-[28px] font-normal text-white lg:text-left">
+            Contact Us
+          </p>
+          <section className="mt-8 flex justify-center gap-8 lg:justify-start">
+            <a
+              href={site.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Rtility on GitHub"
+            >
+              <img
+                src="/images/github.svg"
+                alt="GitHub"
+                loading="lazy"
+                className="h-6 w-6"
+              />
+            </a>
+            <a
+              href={site.twitter}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Rtility on X"
+            >
+              <img
+                src="/images/twitter.svg"
+                alt="X (Twitter)"
+                loading="lazy"
+                className="h-6 w-6"
+              />
+            </a>
+          </section>
+          <a
+            href={`mailto:${site.email}`}
+            className="group mt-8 flex justify-center lg:justify-start"
+          >
+            <img src="/images/email.svg" alt="" loading="lazy" />
+            <span className="ml-4 text-[#7981A3] transition group-hover:text-white">
+              {site.email}
+            </span>
+          </a>
+        </div>
+      </div>
+      <p className="mt-16 text-center text-sm text-[#565F8F]">
+        © {site.activeSince}–{new Date().getFullYear()} Rtility. All rights
+        reserved.
+      </p>
+    </div>
+  )
 }
 
-export default Footer;
+export default Footer

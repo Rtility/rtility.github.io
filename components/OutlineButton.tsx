@@ -1,9 +1,13 @@
 import React, { FC } from 'react'
 
-const OutlineButton:FC<{text:string}> = ({text})=> {
+const OutlineButton: FC<{ text: string; href: string }> = ({ text, href }) => {
   return (
-    <button type="button" className="inline-block font-medium w-[204px] h-[56px] border
-     border-[#00D2EF] text-[#00D2EF] text-sm rounded-[5px]">{text}</button>
+    <a
+      href={href}
+      className="inline-flex h-[56px] w-[204px] items-center justify-center rounded-[5px] border border-[#00D2EF] text-sm font-medium text-[#00D2EF] transition hover:bg-[#00D2EF]/10"
+    >
+      {text}
+    </a>
   )
 }
 export default OutlineButton
