@@ -61,6 +61,19 @@ const Footer: FC = () => {
                 className="h-6 w-6"
               />
             </a>
+            <a
+              href={site.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Rtility on LinkedIn"
+            >
+              <img
+                src="/images/linkedin.svg"
+                alt="LinkedIn"
+                loading="lazy"
+                className="h-6 w-6"
+              />
+            </a>
           </section>
           <a
             href={`mailto:${site.email}`}

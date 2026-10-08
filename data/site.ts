@@ -8,6 +8,7 @@ export const site = {
   github: 'https://github.com/Rtility',
   twitter: 'https://x.com/Rtility_io',
   twitterHandle: '@Rtility_io',
+  linkedin: 'https://www.linkedin.com/company/rtility',
   // GitHub org and X account were both created in February 2022
   activeSince: 2022,
 }
